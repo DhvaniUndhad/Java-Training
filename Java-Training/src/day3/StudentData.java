@@ -1,5 +1,7 @@
 package day3;
 
+import java.util.Scanner;
+
 class StudentData {
 	private int stuID;
 	private String stuName;
@@ -45,18 +47,32 @@ class StudentData {
 	}
 
 	public static void main(String args[]) {
+		
+		 // This object creation would call the parameterized constructor
+		 Scanner scn = new Scanner(System.in);
+		 System.out.println("Enter your ID: ");
+		 int id = scn.nextInt();
+		 System.out.println("Enter your name: ");
+		 String name = scn.next();
+		 System.out.println("Enter your age: ");
+		 int age = scn.nextInt();
+		 
+		StudentData myobj2 = new StudentData(id, name, age);
+		
+		System.out.println("Student Name is: " + myobj2.getStuName());
+		System.out.println("Student Age is: " + myobj2.getStuAge());
+		System.out.println("Student ID is: " + myobj2.getStuID());
+		
+		
 		// This object creation would call the default constructor
 		StudentData myobj = new StudentData();
+		System.out.println();
+		System.out.println("Default values:");
 		System.out.println("Student Name is: " + myobj.getStuName());
 		System.out.println("Student Age is: " + myobj.getStuAge());
 		System.out.println("Student ID is: " + myobj.getStuID());
 
 		
-		 // This object creation would call the parameterized constructor
-		 
-		StudentData myobj2 = new StudentData(999, "Dhvani", 28);
-		System.out.println("Student Name is: " + myobj2.getStuName());
-		System.out.println("Student Age is: " + myobj2.getStuAge());
-		System.out.println("Student ID is: " + myobj2.getStuID());
+	
 	}
 }

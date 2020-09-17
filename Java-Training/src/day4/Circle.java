@@ -2,10 +2,11 @@ package day4;
 
 import java.util.Scanner;
 
+import Interfaces.Car;
 import Interfaces.Shape;
 
 //Interface Example
-public class Circle implements Shape {
+public class Circle implements Shape, Car {
 	private double radius;
 	public double pi = 3.14;
 
@@ -41,6 +42,11 @@ public class Circle implements Shape {
 		shape.draw();
 		System.out.println("Area of Rectangle: " + shape.getArea());
 
+	}
+
+	@Override
+	public int area() {
+		return 0;
 	}
 
 }

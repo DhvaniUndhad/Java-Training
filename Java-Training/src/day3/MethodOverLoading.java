@@ -17,7 +17,7 @@ class Overload{
 	}
 	
 	public void sum(int a) {
-		int c = a+a;
+		int c = a*a;
 		System.out.println("Second method: " + c);
 	}
 }
