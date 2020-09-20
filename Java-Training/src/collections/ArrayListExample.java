@@ -1,4 +1,4 @@
-package collection;
+package collections;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +19,8 @@ public class ArrayListExample {
 
 			System.out.println(b.id +" "+  b.name +" "+ b.author +" "+ b.publisher +" "+ b.quantity);
 		}
+		
+		
 
 	}
 

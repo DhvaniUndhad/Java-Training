@@ -1,4 +1,4 @@
-package collection;
+package collections;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
@@ -13,6 +13,7 @@ public class LinkedHashSetExample {
 		set.add("East");
 		set.add("North");
 		set.add("South");
+		System.out.println(set);
 		Iterator<String> i = set.iterator();
 		while (i.hasNext()) {
 			System.out.println(i.next());
