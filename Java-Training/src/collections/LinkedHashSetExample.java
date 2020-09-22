@@ -32,7 +32,7 @@ public class LinkedHashSetExample {
 
 		// Traversing hash table
 		for (Book b : hs) {
-			System.out.println(b.id + " " + b.name + " " + b.author + " " + b.publisher + " " + b.quantity);
+			System.out.println(b);
 		}
 	}
 

@@ -1,5 +1,6 @@
 package collections;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -23,7 +24,6 @@ public class SetExample {
 	      hset.add(null);
 	      hset.add(null);
 
-	      
 	      //Iterate through HashSet
 	      Iterator<String> it = hset.iterator();
 	      while(it.hasNext()){

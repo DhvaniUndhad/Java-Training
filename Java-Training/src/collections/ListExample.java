@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.TreeSet;
 
 
 public class ListExample {
@@ -40,6 +41,12 @@ public class ListExample {
 		animals.add("Monkey");
 		animals.add("Cow");
 		animals.add("Dog");
+		
+		TreeSet t= new TreeSet();
+		t.add(18);
+		t.add(0);
+		System.out.println(t);
+		
 		
 		fruites.addAll(animals);
 		System.out.println(fruites);

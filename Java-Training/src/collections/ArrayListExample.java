@@ -1,6 +1,9 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ArrayListExample {
@@ -8,19 +11,29 @@ public class ArrayListExample {
 	public static void main(String[] args) {
 
 		List<Book> list = new ArrayList<Book>();
-		Book b1 = new Book(101, "abc", "dhvani", "abcd", 5);
-		Book b2 = new Book(102, "xyz", "vivek", "xyzz", 10);
-		Book b3 = new Book(103, "pqr", "kesha", "pqrst", 15);
-		list.add(b1);
-		list.add(b2);
-		list.add(b3);
+		list.add(new Book(101, "abc", "dhvani", "abcd", 15));
+		list.add(new Book(102, "xyz", "Vivek", "xyzz", 8));
+		list.add(new Book(103, "pqr", "kesha", "pqrst", 30));
+		list.add(new Book(105, "lep", "Lubdhi", "qmnch", 27));
+
+		// Comparable
+		System.out.println("After sorting author name using Comparable:");
+		Collections.sort(list);
 
 		for (Book b : list) {
 
-			System.out.println(b.id +" "+  b.name +" "+ b.author +" "+ b.publisher +" "+ b.quantity);
+			System.out.println(b);
 		}
 		
+		//Comparator
+		System.out.println("After sorting Quantity using Comparator:");
 		
+		
+		Collections.sort(list, new QuantityComparatorExample());
+		for (Book b : list) {
+
+			System.out.println(b);
+		}
 
 	}
 
