@@ -8,20 +8,20 @@ public class Sequence {
 	}
 
 	public void change(String s) {
-//		StringBuilder sb =new StringBuilder();
-//		
-//		sb.append(s.charAt(0));
-//		for (int i = 1; i < s.length(); i++) {
-//			if (Character.isUpperCase(s.charAt(i))) {
-//				sb.append(" ");
-//				sb.append(s.charAt(i));
-//			} else {
-//				sb.append(s.charAt(i));
-//			}
-//		}
-//
-//		System.out.println(sb);
-		
+		String result = "";
+		if(s.substring(12,20).equals("Techouts")) {
+			result += s.substring(12,20);
+		}
+		if(s.substring(10,12).equals("Is")) {
+			result += s.substring(10,12);
+		}
+		if(s.substring(0,2).equals("My")) {
+			result += s.substring(0,2);
+		}
+		if(s.substring(2,10).equals("Employer")) {
+			result += s.substring(2,10);
+		}
+		System.out.println(result);
 	}
 
 }

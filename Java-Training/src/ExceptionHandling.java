@@ -34,7 +34,6 @@ public class ExceptionHandling {
 			}
 			for (int value : arry) {
 				System.out.println(value);
-
 			}
 
 		} catch (ArrayIndexOutOfBoundsException e) {
